@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html class="no=js">
 <!-- HEAD -->
 <head>
     <title>Reach Us</title>
@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/login.js"></script>
     <script src="JS/clock.js"></script>
+    <script src="JS/submit.js"></script>
 <link rel="shortcut icon" href="Pictures/favicon.ico?v1" type="image/x-icon">
 </head>
 <!-- BODY. -->
@@ -94,7 +95,7 @@
         </div>
                 <!-- REG. FORM. -->
 		<div class = "rbox">
-		<form action="malito:ahmad.gehaid99@gmail.com" enctype="text/plain">
+		<form id="reach" action="malito:ahmad.gehaid99@gmail.com" enctype="text/plain">
 				<h1>Reach Us</h1>
 				<h3>Email us with any questions or inquiries. We would be happy to answer them  </h3>
 				First Name: <input type="text" name="FirstName" placeholder="Your name.." id="FName" required><br><br>
@@ -110,7 +111,7 @@
 				How to Contact: <input type="checkbox" name="bymail" value="bymail">By Mail
                 <input type="checkbox" name="byphone" value="byphone">By Phone<br><br>
 				Your Query: <br><textarea name="Add" id="Add" cols="40" rows="2" placeholder="Write something.." required></textarea><br><br>
- 				<input type="submit" value="Submit" class="Reachbuttons">
+            <button type="submit" onclick="myFunction()" class="Reachbuttons">Submit</button>
                 <input type="reset" value="Reset"  class="Reachbuttons">
             </form>
         </div>
