@@ -1,0 +1,135 @@
+.h_block {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+.h_block .contents {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+/* Movies in Scroll boxes */
+.movies_small .movie {
+    width: 279px;
+    height: auto;
+    top:0;
+    margin:10px 5px 5px 5px;
+    white-space: normal;
+}
+.movie {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px 5px;
+    padding: 0;
+    width: 175px;
+    vertical-align: top;
+    clear: both;
+    text-align: center;
+    direction: ltr;
+    color: #000000;
+    border: 3px solid rgba(0,0,0,1);
+}
+.movie:hover{
+    background-color: rgba(0,0,0,0.2);
+    border: 3px solid rgba(0,0,0,1);
+}
+.movies_small .movie img {
+    width:240px;
+    height: 342px;
+}
+.movie .title {
+    display: block;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+/* Movie page */
+h2{
+    position: relative;
+    left: 18%;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-size: 200%;
+    font-family: "orbitron-bold";
+    margin: 10px;
+    width: 60%;
+}
+h3{
+    font-size: 130%;
+}
+#main{
+    height: 1100px;
+    top:-160px;
+}
+.moviebox {
+    position: absolute;
+    clear: both;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 64%;
+    left: 18%;
+    background-color: rgba(255,255,255,0.4);
+}
+.poster{
+    width: 270px;
+    height: 430px;
+    float: left;
+    border: 3px solid;
+    border-color: rgba(0,0,0,0.7);
+    box-shadow: 0 2px 5px rgba(0,0,0,.47);
+    border-radius: 2px;
+}
+.poster img{
+    width: 270px;
+    height: 430px;
+}
+td {
+    display: table-cell;
+    min-width: 10px;
+    text-align: left;
+    padding: 6px;
+    border: 1px solid;
+    font-weight: 900;
+    background-color: rgba(200,200,200,1);
+}
+.table{
+     width: 70%;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 30%;
+}
+.arDis{
+    font-size: 20px;
+    position: relative;
+    margin-left: 30%;
+    text-align: right;
+    color: beige;
+    font-family: "Thabit";
+}
+.enDis{
+    font-size: 20px;
+    margin-left: 30%;
+    position: relative;
+    text-align: left;
+    color: beige;
+}
+.Watch{
+    position:relative;
+    margin-top: 10%;
+    text-align: center;
+}

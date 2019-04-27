@@ -1,0 +1,556 @@
+body{
+    background-image: url(Pictures/cinema.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+div {
+    display: block;
+}
+/* Head background */
+#bg{
+    position:absolute; 
+    left:-1%; 
+    top:0%; 
+    height: 21%;
+    width:101%; 
+    background:none;
+    opacity: 0.9;
+}
+/* Logo */
+#logo{
+    position: absolute;
+    left: 43%;
+    top:2%;
+    height: 17%;
+    width: 15%;
+}
+/* Nav Bar */
+.nav a{
+    background: #DFCB81;
+    border-radius: 50%;
+    color: #494949;
+    display: block;
+    height: 89px;
+    text-align: center;
+    line-height: 90px;
+    margin: 0;
+    width: 89px;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    box-shadow: 0px 5px 10px 3px;
+}
+.nav a:link {
+   color: #000000;
+}
+.nav a:visited{
+    color: #000000;
+}
+.nav a:hover{
+    background-color: #8c6b38;
+}
+.nav .active{
+    outline: 0;
+    background-color: #8c6b38;
+}
+/* Clicks */
+#navclicks li{
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 21px;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    position: relative;
+    margin-top: 22px;
+    margin-right: 1em;
+    text-shadow: 0px 1px 10px;
+}
+/* Login Circle */
+.login{
+    background: #DFCB81;
+    border-radius: 50%;
+    color: #000000;
+    display: block;
+    height: 89px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    line-height: 80px;
+    width: 89px;
+    text-decoration: none;
+    font-size: 25px;
+    transition: all 0.2s linear;
+    box-shadow: 0px 5px 10px 3px;
+    text-shadow: 0px 1px 10px;
+}
+.login:hover{
+    background-color: #8c6b38;
+}
+/* Login Window */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #6DACA3;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    text-align: left;
+    text-shadow: none;
+    font-size: 20px;
+    font-family: "orbitron-bold";
+}
+.modal-content img{
+    position: relative;
+    left:32%;
+}
+/* Login Close Btn */
+.close1 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Login Close Btn */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type=text], input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+} 
+/* Frame switch */
+.ghost {
+  position: absolute;
+  left: -100%;
+}
+.form {
+  margin-top: -14%;
+  transition: 1s ease-in-out;
+}
+.framed {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 15rem;
+  margin-left: -7.5rem;
+}
+#toggle--login:checked ~ .form--signup { left:200%; visibility:hidden; }
+#toggle--signup:checked ~ .form--login { left:-100%; visibility:hidden; }
+/* Login/Sign Up Buttons in Window */
+.log{
+    background-color: #DFCB81;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 15px;
+}
+.log:hover{
+    background-color: #8c6b38;
+    color: white;
+}
+/* Social Media */
+#socialclicks .face{
+    background-image: url(Pictures/facebook.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s linear;
+}
+#socialclicks .face:hover{
+    background-image: url(Pictures/facebookhover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#socialclicks .twitter{
+    background-image: url(Pictures/twitter.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#socialclicks .twitter:hover{
+    background-image: url(Pictures/twitterhover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#socialclicks .youtube{
+    background-image: url(Pictures/youtube.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#socialclicks .youtube:hover{
+    background-image: url(Pictures/youtubehover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#socialclicks{
+    left:1010px;
+    top:5px;
+    position:absolute;
+    display: inline-block;
+}
+#socialclicks li{
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 0;
+    float: right;
+    position: relative;
+    margin-top: 22px;
+    margin-right: 1em;
+    text-shadow: 0px 1px 10px;
+}
+/* Search Bar */
+#search{
+    position: absolute;
+    top:215px;
+    left:4%;
+    z-index: 500;
+}
+input[type=search] {
+	background: #ededed url(Pictures/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	border-radius: 10em;
+	transition: all .5s;
+	box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+    outline: none;
+}
+#search input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#search input[type=search]:hover {
+	background-color: #fff;
+}
+#search input[type=search]:focus {
+	width: 154px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+/* Get menu to left */
+#left {
+    z-index: 20;
+    position: relative;
+}
+/* Boxes */
+.mbox {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    left: 20%;
+    top:0px;
+    background: #e8e5e5;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 60%;
+}
+/* Left Menu */
+#menu{
+    padding: 0;
+    top: 120px;
+    width: 200px;
+    text-align: center;
+}
+#menu a._menu_side {
+    display: none;
+    visibility: hidden;
+}
+#menu a {
+    position: relative;
+    display: block;
+    padding: 6px 4px;
+    font-size: 1.1em;
+    color: #8c6b38;
+    border-bottom: 1px solid #000000;
+    font-family: "Times New Roman", Times, serif;
+}
+.tam {
+    text-align: center;
+}
+#menu a.active {
+    background-color: #8c6b38;
+    color: #ffffff;
+    border-radius: 10px;
+}
+#menu a:hover{
+    background-color: #8c6b38;
+    color: #ffffff;
+}
+.dropdown-movies {
+  position: relative;
+  display: block;
+}
+.dropdown-series {
+  position: relative;
+  display: block;
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #e8e5e5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-movies:hover .dropdown-content {
+  display:inline-block;
+}
+.dropdown-series:hover .dropdown-content {
+  display: inline-block;
+}
+.viewport_right {
+    width: 170px;
+    padding: 0 0 0 10px;
+}
+.td {
+    display: table-cell;
+    min-width: 10px;
+}
+/* AD Box */
+.adbox {
+    background: #dbdada;
+    border: 1px solid #454444;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    float:right;
+    top:-140px;
+    right: 4%;
+    width: 160px;
+    height: 450px;
+}
+.right{
+    float:right;
+    color: royalblue;
+}
+/* Scroll boxes */
+#main{
+    display:block;
+    position: relative;
+    width: 100%;
+    top:-140px;
+}
+.bdb {
+    border-bottom: 1px solid #000000;
+}
+.pda {
+    padding: 10px;
+}
+.h_scroll {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 0 0 4px 4px;
+}
+.h_scroll ._scroll {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -55px;
+    background: rgba(255,255,255,.8);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #06c;
+}
+.h_scroll .contents {
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+/* Movies in Scroll boxes */
+.movies_small .movie {
+    width: 140px;
+    height: auto;
+    top:30px;
+    margin: 15px 10px 10px 8px;
+    white-space: normal;
+}
+.movie {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 30px;
+    padding: 0;
+    width: 175px;
+    vertical-align: top;
+    clear: both;
+    text-align: center;
+    direction: ltr;
+    color: #000000;
+}
+.movie:hover{
+    background-color: rgba(0,0,0,0.2);
+    border: 4px solid rgba(0,0,0,0.2);
+}
+.movies_small .movie img {
+    width: 140px;
+    height: 200px;
+}
+.movie .title {
+    display: block;
+    line-height: 20px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+}
+/* Logo in Footer */
+#flogo{
+    position:absolute;
+    left: 23%;
+    bottom: 6%;
+    height: 70%;
+    background:none;
+    opacity: 0.8;
+}
+/* Footer */
+footer {
+    background-color: rgba(0,0,0,0.9);
+    left: -8px;
+    bottom: -8px;
+    width: 101%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+/* Clock */
+.clock{
+    position:absolute;
+    left: 72%;
+    bottom: 0%;
+    height: 40%;
+    background:none;
+    transform: translateX(-50%) translateY(-50%);
+    color: #DFCB81;
+    font-family: "orbitron-bold";
+    letter-spacing: 7px;
+    font-size: 30px;
+}
+/* Fonts */
+@font-face{
+    font-family: "orbitron-bold";
+    src: url(Fonts/orbitron-bold.otf);
+}
+@font-face{
+    font-family: "Thabit";
+    src: url(Fonts/Thabit.otf);
+}
+.font{
+      font-family: 'Aldrich';font-size: 22px;
+}
+.storyfont{
+    font-family: 'Sofia';font-size: 22px;
+}
+.tablefont{
+    font-family: 'Biryani';font-size: 13px;
+}
+@import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
+/* Reach Us Page */
+.rbox {
+  width: 500px;
+  border: 20px solid #8c6b38;
+  border-radius: 10px;
+  padding: 25px;
+  margin: -125px;
+  margin : auto;
+  margin-top : -140px;
+  color : white;
+    font-size: 1em;
+    margin-bottom: 100px;
+}
+/* Reach Us Form */
+#FName{
+    margin-left: 40px;
+    width: 60%;
+}
+#LName{
+    margin-left: 42px;
+    width: 60%;
+}
+#Email{
+    margin-left: 68px;
+    width: 60%;
+}
+#num{
+    margin-left: 15px;
+    width: 60%;
+}
+#inquiry{
+    margin-left: 30px;
+    width: 61%;
+}
+#Add{
+    margin-left: 120px;
+    resize: vertical;
+}
+/* Reach Buttons */
+.Reachbuttons {
+  background-color: #8c6b38;
+  padding: 10px;
+  text-align: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    border-radius: 10px;
+}
